@@ -1,37 +1,37 @@
 {
-    "name": "infinitypaul/laravel-password-history-validation",
+    "name": "lucaterribili/laravel-password-history-validation",
     "description": "Prevent users from reusing recently used passwords",
     "keywords": [
-        "infinitypaul",
+        "lucaterribili",
         "laravel-password-history-validation",
         "laravel",
         "password"
     ],
-    "homepage": "https://github.com/infinitypaul/laravel-password-history-validation",
+    "homepage": "https://github.com/lucaterribili/laravel-password-history-validation",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Edward Paul",
-            "email": "infinitypaul@live.com",
+            "name": "Luca Terribili",
+            "email": "dottorlucaterribili@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=7.1"
+        "illuminate/console": "5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.* || 6.* || 7.* || 8.* || 9.*",
+        "illuminate/support": "5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.* || 6.* || 7.* || 8.* || 9.*"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/phpunit": "8.* || 9.*"
     },
     "autoload": {
         "psr-4": {
-            "Infinitypaul\\LaravelPasswordHistoryValidation\\": "src"
+            "LucaTerribili\\LaravelPasswordHistoryValidation\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Infinitypaul\\LaravelPasswordHistoryValidation\\Tests\\": "tests"
+            "LucaTerribili\\LaravelPasswordHistoryValidation\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Infinitypaul\\LaravelPasswordHistoryValidation\\LaravelPasswordHistoryValidationServiceProvider"
+                "LucaTerribili\\LaravelPasswordHistoryValidation\\LaravelPasswordHistoryValidationServiceProvider"
             ]
         }
     }

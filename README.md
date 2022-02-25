@@ -1,9 +1,9 @@
 # Laravel Password History Validation
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/infinitypaul/laravel-password-history-validation.svg?style=flat-square)](https://packagist.org/packages/infinitypaul/laravel-password-history-validation)
-[![Build Status](https://img.shields.io/travis/infinitypaul/laravel-password-history-validation/master.svg?style=flat-square)](https://travis-ci.org/infinitypaul/laravel-password-history-validation)
-[![Quality Score](https://img.shields.io/scrutinizer/g/infinitypaul/laravel-password-history-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/infinitypaul/laravel-password-history-validation)
-[![Total Downloads](https://img.shields.io/packagist/dt/infinitypaul/laravel-password-history-validation.svg?style=flat-square)](https://packagist.org/packages/infinitypaul/laravel-password-history-validation)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lucaterribili/laravel-password-history-validation.svg?style=flat-square)](https://packagist.org/packages/lucaterribili/laravel-password-history-validation)
+[![Build Status](https://img.shields.io/travis/lucaterribili/laravel-password-history-validation/master.svg?style=flat-square)](https://travis-ci.org/lucaterribili/laravel-password-history-validation)
+[![Quality Score](https://img.shields.io/scrutinizer/g/lucaterribili/laravel-password-history-validation.svg?style=flat-square)](https://scrutinizer-ci.com/g/lucaterribili/laravel-password-history-validation)
+[![Total Downloads](https://img.shields.io/packagist/dt/lucaterribili/laravel-password-history-validation.svg?style=flat-square)](https://packagist.org/packages/lucaterribili/laravel-password-history-validation)
 
 Prevent users from reusing recently used passwords.
 
@@ -12,7 +12,7 @@ Prevent users from reusing recently used passwords.
 You can install the package via composer:
 
 ```bash
-composer require infinitypaul/laravel-password-history-validation
+composer require lucaterribili/laravel-password-history-validation
 ```
 
 ## Configuration
@@ -34,7 +34,7 @@ This package will observe the created and updated event of the models (check the
 In Your Form Request or Inline Validation, All You Need To Do Is Instantiate The `NotFromPasswordHistory` class passing the current user as an argument
 ``` php
 <?php
-use Infinitypaul\LaravelPasswordHistoryValidation\Rules\NotFromPasswordHistory;
+use LucaTerribili\LaravelPasswordHistoryValidation\Rules\NotFromPasswordHistory;
 
 $this->validate($request, [
             'password' => [
@@ -51,7 +51,7 @@ Because We Are Storing The Hashed Password In Your Database, Your Database Can G
 Add PasswordHistoryTrait To Your User Model
 ``` php
 <?php
-use Infinitypaul\LaravelPasswordHistoryValidation\Traits\PasswordHistoryTrait;
+use LucaTerribili\LaravelPasswordHistoryValidation\Traits\PasswordHistoryTrait;
 
 class User extends Authenticatable
 {
@@ -74,17 +74,17 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email infinitypaul@live.com instead of using the issue tracker.
+If you discover any security related issues, please email lucaterribili@live.com instead of using the issue tracker.
 
 
 ## How can I thank you?
 
 Why not star the github repo? I'd love the attention! Why not share the link for this repository on Twitter or HackerNews? Spread the word!
 
-Don't forget to [follow me on twitter](https://twitter.com/infinitypaul)!
+Don't forget to [follow me on Linkedin](https://www.linkedin.com/in/luca-terribili-10916524/)!
 
 Thanks!
-Edward Paul.
+Luca Terribili.
 
 ## License
 
