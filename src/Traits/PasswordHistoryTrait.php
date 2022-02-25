@@ -1,8 +1,8 @@
 <?php
 
-namespace Infinitypaul\LaravelPasswordHistoryValidation\Traits;
+namespace LucaTerribili\LaravelPasswordHistoryValidation\Traits;
 
-use Infinitypaul\LaravelPasswordHistoryValidation\Models\PasswordHistory;
+use LucaTerribili\LaravelPasswordHistoryValidation\Models\PasswordHistory;
 
 trait PasswordHistoryTrait
 {
@@ -15,6 +15,9 @@ trait PasswordHistoryTrait
             ->latest();
     }
 
+    /**
+     * @return void
+     */
     public function deletePasswordHistory()
     {
         $keep = config('password-history.keep');

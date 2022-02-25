@@ -1,6 +1,6 @@
 <?php
 
-namespace Infinitypaul\LaravelPasswordHistoryValidation\Models;
+namespace LucaTerribili\LaravelPasswordHistoryValidation\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

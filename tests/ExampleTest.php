@@ -1,8 +1,8 @@
 <?php
 
-namespace Infinitypaul\LaravelPasswordHistoryValidation\Tests;
+namespace LucaTerribili\LaravelPasswordHistoryValidation\Tests;
 
-use Infinitypaul\LaravelPasswordHistoryValidation\LaravelPasswordHistoryValidationServiceProvider;
+use LucaTerribili\LaravelPasswordHistoryValidation\LaravelPasswordHistoryValidationServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class ExampleTest extends TestCase

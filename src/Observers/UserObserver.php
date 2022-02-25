@@ -1,12 +1,16 @@
 <?php
 
-namespace Infinitypaul\LaravelPasswordHistoryValidation\Observers;
+namespace LucaTerribili\LaravelPasswordHistoryValidation\Observers;
 
 use Illuminate\Support\Arr;
-use Infinitypaul\LaravelPasswordHistoryValidation\Models\PasswordHistoryRepo;
+use LucaTerribili\LaravelPasswordHistoryValidation\Models\PasswordHistoryRepo;
 
 class UserObserver
 {
+    /**
+     * @param $user
+     * @return void
+     */
     public function updated($user)
     {
         $configPasswordColumn = config('password-history.observe.column');
@@ -15,6 +19,10 @@ class UserObserver
         }
     }
 
+    /**
+     * @param $user
+     * @return void
+     */
     public function created($user)
     {
         $password = config('password-history.observe.column') ?? 'password';
