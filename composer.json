@@ -1,5 +1,5 @@
 {
-    "name": "lucaterribili/laravel-password-history-validation",
+    "name": "notwarp/laravel-password-history-validation",
     "description": "Prevent users from reusing recently used passwords",
     "keywords": [
         "lucaterribili",
